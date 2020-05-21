@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CurrencyConverter.Views.Description"
+             Title="Opis"
+             Icon="info.png">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HeightRequest="80">
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Opis Aplikacji" TextColor="#AF52DE" FontSize="20" FontAttributes="Bold" FontFamily="AlegreyaSansSC-Regular.otf#AlegreyaSansSC-Regular"/>         
+        </Grid>
+        <Grid Grid.Row="1">
+        <BoxView BackgroundColor="#AF52DE" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Aspect="AspectFill" Source="bg.png" Opacity="0.5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Image Aspect="AspectFill"  Source="overlay.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="30,30,30,5" Text=" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc." 
+                   TextColor="White" FontSize="18" FontFamily="AlegreyaSansSC-Regular.otf#AlegreyaSansSC-Regular">
+            </Label>
+
+        </Grid >
+    </Grid>
+</ContentPage>

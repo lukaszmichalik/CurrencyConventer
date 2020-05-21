@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:CurrencyConverter.Views" 
+             
+             x:Class="CurrencyConverter.Views.OtherCurrencies"
+             Title="Kursy"
+             Icon="dollar_sign.png"
+             >
+
+
+
+
+    <ContentPage.BindingContext>
+        <local:MainPage />
+    </ContentPage.BindingContext>
+    
+    <ScrollView HeightRequest="3000">
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            
+            <Grid Grid.Row="0" HeightRequest="80">
+                <StackLayout>
+
+                    <Label HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand" 
+                           Text="Top 10 kursów najważniejszych walut dla PLN" 
+                           TextColor="#AF52DE" FontSize="18"
+                           FontFamily="AlegreyaSansSC-Regular.otf#AlegreyaSansSC-Regular"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid Grid.Row="1" BackgroundColor="#AF52DE" HeightRequest="80" >
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 USD" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbUSD"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="2" BackgroundColor="#AF52DE" HeightRequest="80" Opacity="0.8">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 EUR" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png" />
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbEUR"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="3" BackgroundColor="#AF52DE" HeightRequest="80" >
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 JPY" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbJPY"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="4" BackgroundColor="#AF52DE" HeightRequest="80" Opacity="0.8">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 GBP" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbGBP"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="5" BackgroundColor="#AF52DE" HeightRequest="80" >
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 AUD" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbAUD"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="6" BackgroundColor="#AF52DE" HeightRequest="80" Opacity="0.8">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 CAD" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbCAD"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="7" BackgroundColor="#AF52DE" HeightRequest="80" >
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 CHF" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbCHF"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="8" BackgroundColor="#AF52DE" HeightRequest="80" Opacity="0.8">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 CNY" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbCNY"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="9" BackgroundColor="#AF52DE" HeightRequest="80" >
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 SEK" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbSEK"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="10" BackgroundColor="#AF52DE" HeightRequest="80" Opacity="0.8">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="1 NZD" TextColor="White" FontSize="20"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Image  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="circle_arrows.png"/>
+                </Grid >
+                <Grid Grid.Column="2">
+                    <Label x:Name="LbNZD"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="0" TextColor="White" FontSize="20"/>
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
