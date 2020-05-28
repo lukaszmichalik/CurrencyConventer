@@ -4,10 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:behaviors="clr-namespace:CurrencyConverter.behaviour"
+             xmlns:viewModels="clr-namespace:CurrencyConverter.ViewModel;assembly=CurrencyConverter"
              mc:Ignorable="d"
              x:Class="CurrencyConverter.Views.MainPage"
              Title="Strona Główna"
              Icon="home.png">
+    <ContentPage.BindingContext>
+        <viewModels:MathViewModel/>
+    </ContentPage.BindingContext>
 
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0">
         <Grid.RowDefinitions>

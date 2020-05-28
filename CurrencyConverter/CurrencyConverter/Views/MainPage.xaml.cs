@@ -35,6 +35,11 @@ namespace CurrencyConverter.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
+            double a = 0.12345;
+            Console.WriteLine("check: " + a.ToString());
+            if (a.ToString() == "0.12345") {
+                Console.WriteLine("check2: " + a.ToString());
+            }
             if (Picker1.SelectedItem == null || Picker2.SelectedItem == null || entry1.Text==null)
             {
                 var message = "Wypełnij wszystkie pola";
