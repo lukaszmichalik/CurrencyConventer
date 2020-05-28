@@ -13,13 +13,14 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" HeightRequest="80">
-            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Opis Aplikacji" TextColor="#AF52DE" FontSize="20" FontAttributes="Bold" FontFamily="AlegreyaSansSC-Regular.otf#AlegreyaSansSC-Regular"/>         
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Opis Aplikacji" TextColor="#AF52DE" FontSize="20" FontAttributes="Bold" FontFamily="AlegreyaSansSC-Regular.otf#AlegreyaSansSC-Regular"/>
         </Grid>
         <Grid Grid.Row="1">
         <BoxView BackgroundColor="#AF52DE" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         <Image Aspect="AspectFill" Source="bg.png" Opacity="0.5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
         <Image Aspect="AspectFill"  Source="overlay.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="30,30,30,5" Text=" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc." 
+            <Label HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="30,30,30,5"  
+                   Text=" Currency Converter to prosty konwerter walutowy. Dzięki niemu możliwe jest szybkie przekonwertowanie podanej kwoty na inną walutę, a także sprawdzenie aktualnych kursów względem złotego. &#10; &#10;Aby przekonwertować kwotę wpisz jej wartość w polu wpisz kwotę. Następnie wybierz walutę konwertowaną oraz walutę, na którą chcesz przekonwertować. Po wypełnieniu wszystkich pól zatwierdź swój wybór przyciskiem, a otrzymasz wynik konwersji. Aby sprawdzić aktualne kursy względem złotego przejdź na zakładkę Kursy." 
                    TextColor="White" FontSize="18" FontFamily="AlegreyaSansSC-Regular.otf#AlegreyaSansSC-Regular">
             </Label>
 

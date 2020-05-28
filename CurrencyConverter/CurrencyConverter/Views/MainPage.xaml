@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:behaviors="clr-namespace:CurrencyConverter.behaviour"
              mc:Ignorable="d"
              x:Class="CurrencyConverter.Views.MainPage"
              Title="Strona Główna"
@@ -17,7 +18,32 @@
 
         <Grid Grid.Row="0" BackgroundColor="#AF52DE">
             <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <Entry x:Name="entry1" Placeholder="Wpisz Kwote" HorizontalOptions="Center" FontSize="30" PlaceholderColor="White" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <!--<Entry 
+                    x:Name="entry1"
+                    Placeholder="Wpisz Kwote" 
+                    HorizontalOptions="Center" 
+                    FontSize="30" 
+                    PlaceholderColor="White" 
+                    TextColor="White" 
+                    HorizontalTextAlignment="Center" 
+                    VerticalTextAlignment="Center" 
+                    Keyboard="Numeric"/>-->
+                <Entry
+                    x:Name="entry1"
+                    Placeholder="Wpisz Kwote" 
+                    HorizontalOptions="Center" 
+                    FontSize="30" 
+                    PlaceholderColor="White" 
+                    TextColor="White" 
+                    HorizontalTextAlignment="Center" 
+                    VerticalTextAlignment="Center" 
+                    Keyboard="Numeric"
+                    Text="{Binding EntryText}" >
+                    <Entry.Behaviors>
+                        <behaviors:EntryLengthValidatorBehavior MaxLength="10"/>
+                    </Entry.Behaviors>
+                </Entry>
+               
             </StackLayout>
 
         </Grid>
@@ -43,7 +69,7 @@
                             <x:String>AUD</x:String>
                             <x:String>CAD</x:String>
                             <x:String>CHF</x:String>
-                            <x:String>CNH</x:String>
+                            <x:String>CNY</x:String>
                             <x:String>SEK</x:String>
                             <x:String>NZD</x:String>
                             <x:String>HKD</x:String>
@@ -71,7 +97,7 @@
                             <x:String>AUD</x:String>
                             <x:String>CAD</x:String>
                             <x:String>CHF</x:String>
-                            <x:String>CNH</x:String>
+                            <x:String>CNY</x:String>
                             <x:String>SEK</x:String>
                             <x:String>NZD</x:String>
                             <x:String>HKD</x:String>

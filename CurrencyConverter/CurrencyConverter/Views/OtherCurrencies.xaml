@@ -38,7 +38,8 @@
             <Grid Grid.Row="0" HeightRequest="80">
                 <StackLayout>
 
-                    <Label HorizontalOptions="CenterAndExpand" 
+                    <Label x:Name="topName"
+                           HorizontalOptions="CenterAndExpand" 
                            VerticalOptions="CenterAndExpand" 
                            Text="Top 10 kursów najważniejszych walut dla PLN" 
                            TextColor="#AF52DE" FontSize="18"

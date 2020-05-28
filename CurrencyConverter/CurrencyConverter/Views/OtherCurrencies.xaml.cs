@@ -25,7 +25,9 @@ namespace CurrencyConverter.Views
                 LbCHF.Text = args[6];
                 LbCNY.Text = args[7];
                 LbSEK.Text = args[8];
-                LbNZD.Text = args[9];              
+                LbNZD.Text = args[9];
+
+                topName.Text = "Top 10 najważniejszych walut dla " + args[10];
             });
 
             InitializeComponent();
