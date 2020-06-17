@@ -94,11 +94,7 @@ namespace CurrencyConverter.Views
 
                             MessagingCenter.Send<MainPage, string[]>(this, "MessageName", LabelList);
 
-
-
                             wynikLb.Text = wynik.ToString("0.00") + " " + Picker2.SelectedItem.ToString();
-
-
 
                         }
                         catch (Exception ex)
@@ -113,6 +109,7 @@ namespace CurrencyConverter.Views
                 }
             }
         }
+
 
         private bool CheckConnectivity()
         {
